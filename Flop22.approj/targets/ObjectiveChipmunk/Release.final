@@ -1,0 +1,1443 @@
+{
+    "assets": [], 
+    "config": {
+        "FEATURES": [
+            "opengles2", 
+            "landscape"
+        ], 
+        "ICU_CONFIG": "normal"
+    }, 
+    "defines": {
+        "NDEBUG": 1, 
+        "NS_BLOCK_ASSERTIONS": 1, 
+        "__IPHONE_OS_VERSION_MIN_REQUIRED": 50000
+    }, 
+    "deps": [
+        "UIKit"
+    ], 
+    "flags": [
+        "-fno-objc-arc", 
+        "-fasm-blocks", 
+        {
+            "flag": "-std=gnu99", 
+            "not_type": "c++"
+        }, 
+        {
+            "flag": "-fgnu-keywords", 
+            "not_type": "c++"
+        }, 
+        "-fno-asm", 
+        "-fpascal-strings", 
+        "-Wno-deprecated-declarations", 
+        "-Wreturn-type", 
+        "-Wswitch", 
+        "-Wparentheses", 
+        "-Wformat", 
+        "-Wunused-value", 
+        "-Wunused-variable", 
+        {
+            "flag": "-Winvalid-offsetof", 
+            "type": "c++"
+        }, 
+        {
+            "flag": "-Wprotocol", 
+            "type": "objc"
+        }
+    ], 
+    "header_paths": [
+        {
+            "header_path": "ObjectiveChipmunk-generated-files.hmap", 
+            "hmap": {}, 
+            "type": "iquote"
+        }, 
+        {
+            "header_path": "ObjectiveChipmunk-own-target-headers.hmap", 
+            "hmap": {}, 
+            "type": "I"
+        }, 
+        {
+            "header_path": "ObjectiveChipmunk-all-target-headers.hmap", 
+            "hmap": {}, 
+            "type": "I"
+        }, 
+        {
+            "header_path": "ObjectiveChipmunk-project-headers.hmap", 
+            "hmap": {
+                "ALBuffer.h": {
+                    "key": "ALBuffer.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/OpenAL/", 
+                    "suffix": "ALBuffer.h"
+                }, 
+                "ALCaptureDevice.h": {
+                    "key": "ALCaptureDevice.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/OpenAL/", 
+                    "suffix": "ALCaptureDevice.h"
+                }, 
+                "ALChannelSource.h": {
+                    "key": "ALChannelSource.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/OpenAL/", 
+                    "suffix": "ALChannelSource.h"
+                }, 
+                "ALContext.h": {
+                    "key": "ALContext.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/OpenAL/", 
+                    "suffix": "ALContext.h"
+                }, 
+                "ALDevice.h": {
+                    "key": "ALDevice.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/OpenAL/", 
+                    "suffix": "ALDevice.h"
+                }, 
+                "ALListener.h": {
+                    "key": "ALListener.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/OpenAL/", 
+                    "suffix": "ALListener.h"
+                }, 
+                "ALSoundSource.h": {
+                    "key": "ALSoundSource.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/OpenAL/", 
+                    "suffix": "ALSoundSource.h"
+                }, 
+                "ALSoundSourcePool.h": {
+                    "key": "ALSoundSourcePool.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/OpenAL/", 
+                    "suffix": "ALSoundSourcePool.h"
+                }, 
+                "ALSource.h": {
+                    "key": "ALSource.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/OpenAL/", 
+                    "suffix": "ALSource.h"
+                }, 
+                "ALTypes.h": {
+                    "key": "ALTypes.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/OpenAL/", 
+                    "suffix": "ALTypes.h"
+                }, 
+                "ALWrapper.h": {
+                    "key": "ALWrapper.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/OpenAL/", 
+                    "suffix": "ALWrapper.h"
+                }, 
+                "ARCSafe_MemMgmt.h": {
+                    "key": "ARCSafe_MemMgmt.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/Support/", 
+                    "suffix": "ARCSafe_MemMgmt.h"
+                }, 
+                "AppDelegate.h": {
+                    "key": "AppDelegate.h", 
+                    "prefix": "Flop22/Classes/", 
+                    "suffix": "AppDelegate.h"
+                }, 
+                "CCAction.h": {
+                    "key": "CCAction.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCAction.h"
+                }, 
+                "CCActionCatmullRom.h": {
+                    "key": "CCActionCatmullRom.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCActionCatmullRom.h"
+                }, 
+                "CCActionEase.h": {
+                    "key": "CCActionEase.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCActionEase.h"
+                }, 
+                "CCActionInstant.h": {
+                    "key": "CCActionInstant.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCActionInstant.h"
+                }, 
+                "CCActionInterval.h": {
+                    "key": "CCActionInterval.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCActionInterval.h"
+                }, 
+                "CCActionManager.h": {
+                    "key": "CCActionManager.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCActionManager.h"
+                }, 
+                "CCActionProgressTimer.h": {
+                    "key": "CCActionProgressTimer.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCActionProgressTimer.h"
+                }, 
+                "CCActionTween.h": {
+                    "key": "CCActionTween.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCActionTween.h"
+                }, 
+                "CCAnimation.h": {
+                    "key": "CCAnimation.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCAnimation.h"
+                }, 
+                "CCAnimationCache.h": {
+                    "key": "CCAnimationCache.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCAnimationCache.h"
+                }, 
+                "CCAppDelegate.h": {
+                    "key": "CCAppDelegate.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCAppDelegate.h"
+                }, 
+                "CCAtlasNode.h": {
+                    "key": "CCAtlasNode.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCAtlasNode.h"
+                }, 
+                "CCBAnimationManager.h": {
+                    "key": "CCBAnimationManager.h", 
+                    "prefix": "Flop22/Libraries/CCBReader/", 
+                    "suffix": "CCBAnimationManager.h"
+                }, 
+                "CCBKeyframe.h": {
+                    "key": "CCBKeyframe.h", 
+                    "prefix": "Flop22/Libraries/CCBReader/", 
+                    "suffix": "CCBKeyframe.h"
+                }, 
+                "CCBLocalizationManager.h": {
+                    "key": "CCBLocalizationManager.h", 
+                    "prefix": "Flop22/Libraries/CCBReader/", 
+                    "suffix": "CCBLocalizationManager.h"
+                }, 
+                "CCBReader.h": {
+                    "key": "CCBReader.h", 
+                    "prefix": "Flop22/Libraries/CCBReader/", 
+                    "suffix": "CCBReader.h"
+                }, 
+                "CCBReader_Private.h": {
+                    "key": "CCBReader_Private.h", 
+                    "prefix": "Flop22/Libraries/CCBReader/", 
+                    "suffix": "CCBReader_Private.h"
+                }, 
+                "CCBSequence.h": {
+                    "key": "CCBSequence.h", 
+                    "prefix": "Flop22/Libraries/CCBReader/", 
+                    "suffix": "CCBSequence.h"
+                }, 
+                "CCBSequenceProperty.h": {
+                    "key": "CCBSequenceProperty.h", 
+                    "prefix": "Flop22/Libraries/CCBReader/", 
+                    "suffix": "CCBSequenceProperty.h"
+                }, 
+                "CCBuilderReader.h": {
+                    "key": "CCBuilderReader.h", 
+                    "prefix": "Flop22/Libraries/CCBReader/", 
+                    "suffix": "CCBuilderReader.h"
+                }, 
+                "CCButton.h": {
+                    "key": "CCButton.h", 
+                    "prefix": "Flop22/Libraries/cocos2d-ui/", 
+                    "suffix": "CCButton.h"
+                }, 
+                "CCClippingNode.h": {
+                    "key": "CCClippingNode.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCClippingNode.h"
+                }, 
+                "CCColor.h": {
+                    "key": "CCColor.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Support/", 
+                    "suffix": "CCColor.h"
+                }, 
+                "CCConfiguration.h": {
+                    "key": "CCConfiguration.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCConfiguration.h"
+                }, 
+                "CCControl.h": {
+                    "key": "CCControl.h", 
+                    "prefix": "Flop22/Libraries/cocos2d-ui/", 
+                    "suffix": "CCControl.h"
+                }, 
+                "CCControlSubclass.h": {
+                    "key": "CCControlSubclass.h", 
+                    "prefix": "Flop22/Libraries/cocos2d-ui/", 
+                    "suffix": "CCControlSubclass.h"
+                }, 
+                "CCControlTextureFactory.h": {
+                    "key": "CCControlTextureFactory.h", 
+                    "prefix": "Flop22/Libraries/cocos2d-ui/", 
+                    "suffix": "CCControlTextureFactory.h"
+                }, 
+                "CCDirector.h": {
+                    "key": "CCDirector.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCDirector.h"
+                }, 
+                "CCDirectorIOS.h": {
+                    "key": "CCDirectorIOS.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCDirectorIOS.h"
+                }, 
+                "CCDirectorMac.h": {
+                    "key": "CCDirectorMac.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Platforms/Mac/", 
+                    "suffix": "CCDirectorMac.h"
+                }, 
+                "CCDirector_Private.h": {
+                    "key": "CCDirector_Private.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCDirector_Private.h"
+                }, 
+                "CCDrawNode.h": {
+                    "key": "CCDrawNode.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCDrawNode.h"
+                }, 
+                "CCDrawingPrimitives.h": {
+                    "key": "CCDrawingPrimitives.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCDrawingPrimitives.h"
+                }, 
+                "CCES2Renderer.h": {
+                    "key": "CCES2Renderer.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCES2Renderer.h"
+                }, 
+                "CCESRenderer.h": {
+                    "key": "CCESRenderer.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCESRenderer.h"
+                }, 
+                "CCFileUtils.h": {
+                    "key": "CCFileUtils.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Support/", 
+                    "suffix": "CCFileUtils.h"
+                }, 
+                "CCGL.h": {
+                    "key": "CCGL.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Platforms/", 
+                    "suffix": "CCGL.h"
+                }, 
+                "CCGLProgram.h": {
+                    "key": "CCGLProgram.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCGLProgram.h"
+                }, 
+                "CCGLView.h": {
+                    "key": "CCGLView.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCGLView.h"
+                }, 
+                "CCLabelAtlas.h": {
+                    "key": "CCLabelAtlas.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCLabelAtlas.h"
+                }, 
+                "CCLabelBMFont.h": {
+                    "key": "CCLabelBMFont.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCLabelBMFont.h"
+                }, 
+                "CCLabelBMFont_Private.h": {
+                    "key": "CCLabelBMFont_Private.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCLabelBMFont_Private.h"
+                }, 
+                "CCLabelTTF.h": {
+                    "key": "CCLabelTTF.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCLabelTTF.h"
+                }, 
+                "CCLayout.h": {
+                    "key": "CCLayout.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCLayout.h"
+                }, 
+                "CCLayoutBox.h": {
+                    "key": "CCLayoutBox.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCLayoutBox.h"
+                }, 
+                "CCMotionStreak.h": {
+                    "key": "CCMotionStreak.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCMotionStreak.h"
+                }, 
+                "CCNS.h": {
+                    "key": "CCNS.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Platforms/", 
+                    "suffix": "CCNS.h"
+                }, 
+                "CCNode+Debug.h": {
+                    "key": "CCNode+Debug.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCNode+Debug.h"
+                }, 
+                "CCNode.h": {
+                    "key": "CCNode.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCNode.h"
+                }, 
+                "CCNodeColor.h": {
+                    "key": "CCNodeColor.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCNodeColor.h"
+                }, 
+                "CCNode_Private.h": {
+                    "key": "CCNode_Private.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCNode_Private.h"
+                }, 
+                "CCParallaxNode.h": {
+                    "key": "CCParallaxNode.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCParallaxNode.h"
+                }, 
+                "CCParticleBatchNode.h": {
+                    "key": "CCParticleBatchNode.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCParticleBatchNode.h"
+                }, 
+                "CCParticleExamples.h": {
+                    "key": "CCParticleExamples.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCParticleExamples.h"
+                }, 
+                "CCParticleSystem.h": {
+                    "key": "CCParticleSystem.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCParticleSystem.h"
+                }, 
+                "CCParticleSystemBase.h": {
+                    "key": "CCParticleSystemBase.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCParticleSystemBase.h"
+                }, 
+                "CCParticleSystemBase_Private.h": {
+                    "key": "CCParticleSystemBase_Private.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCParticleSystemBase_Private.h"
+                }, 
+                "CCParticleSystem_Private.h": {
+                    "key": "CCParticleSystem_Private.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCParticleSystem_Private.h"
+                }, 
+                "CCPhysics+ObjectiveChipmunk.h": {
+                    "key": "CCPhysics+ObjectiveChipmunk.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCPhysics+ObjectiveChipmunk.h"
+                }, 
+                "CCPhysicsBody.h": {
+                    "key": "CCPhysicsBody.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCPhysicsBody.h"
+                }, 
+                "CCPhysicsJoint.h": {
+                    "key": "CCPhysicsJoint.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCPhysicsJoint.h"
+                }, 
+                "CCPhysicsNode.h": {
+                    "key": "CCPhysicsNode.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCPhysicsNode.h"
+                }, 
+                "CCPhysicsShape.h": {
+                    "key": "CCPhysicsShape.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCPhysicsShape.h"
+                }, 
+                "CCProfiling.h": {
+                    "key": "CCProfiling.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Support/", 
+                    "suffix": "CCProfiling.h"
+                }, 
+                "CCProgressNode.h": {
+                    "key": "CCProgressNode.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCProgressNode.h"
+                }, 
+                "CCProgressNode_Private.h": {
+                    "key": "CCProgressNode_Private.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCProgressNode_Private.h"
+                }, 
+                "CCProtocols.h": {
+                    "key": "CCProtocols.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCProtocols.h"
+                }, 
+                "CCRenderTexture.h": {
+                    "key": "CCRenderTexture.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCRenderTexture.h"
+                }, 
+                "CCResponder.h": {
+                    "key": "CCResponder.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCResponder.h"
+                }, 
+                "CCResponderManager.h": {
+                    "key": "CCResponderManager.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCResponderManager.h"
+                }, 
+                "CCScene.h": {
+                    "key": "CCScene.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCScene.h"
+                }, 
+                "CCScheduler.h": {
+                    "key": "CCScheduler.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCScheduler.h"
+                }, 
+                "CCScrollView.h": {
+                    "key": "CCScrollView.h", 
+                    "prefix": "Flop22/Libraries/cocos2d-ui/", 
+                    "suffix": "CCScrollView.h"
+                }, 
+                "CCShaderCache.h": {
+                    "key": "CCShaderCache.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCShaderCache.h"
+                }, 
+                "CCSlider.h": {
+                    "key": "CCSlider.h", 
+                    "prefix": "Flop22/Libraries/cocos2d-ui/", 
+                    "suffix": "CCSlider.h"
+                }, 
+                "CCSprite.h": {
+                    "key": "CCSprite.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCSprite.h"
+                }, 
+                "CCSprite9Slice.h": {
+                    "key": "CCSprite9Slice.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCSprite9Slice.h"
+                }, 
+                "CCSpriteBatchNode.h": {
+                    "key": "CCSpriteBatchNode.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCSpriteBatchNode.h"
+                }, 
+                "CCSpriteBatchNode_Private.h": {
+                    "key": "CCSpriteBatchNode_Private.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCSpriteBatchNode_Private.h"
+                }, 
+                "CCSpriteFrame.h": {
+                    "key": "CCSpriteFrame.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCSpriteFrame.h"
+                }, 
+                "CCSpriteFrameCache.h": {
+                    "key": "CCSpriteFrameCache.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCSpriteFrameCache.h"
+                }, 
+                "CCSprite_Private.h": {
+                    "key": "CCSprite_Private.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCSprite_Private.h"
+                }, 
+                "CCTMXXMLParser.h": {
+                    "key": "CCTMXXMLParser.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCTMXXMLParser.h"
+                }, 
+                "CCTableView.h": {
+                    "key": "CCTableView.h", 
+                    "prefix": "Flop22/Libraries/cocos2d-ui/", 
+                    "suffix": "CCTableView.h"
+                }, 
+                "CCTextField.h": {
+                    "key": "CCTextField.h", 
+                    "prefix": "Flop22/Libraries/cocos2d-ui/", 
+                    "suffix": "CCTextField.h"
+                }, 
+                "CCTexture.h": {
+                    "key": "CCTexture.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCTexture.h"
+                }, 
+                "CCTextureAtlas.h": {
+                    "key": "CCTextureAtlas.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCTextureAtlas.h"
+                }, 
+                "CCTextureCache.h": {
+                    "key": "CCTextureCache.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCTextureCache.h"
+                }, 
+                "CCTexturePVR.h": {
+                    "key": "CCTexturePVR.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCTexturePVR.h"
+                }, 
+                "CCTexture_Private.h": {
+                    "key": "CCTexture_Private.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCTexture_Private.h"
+                }, 
+                "CCTiledMap.h": {
+                    "key": "CCTiledMap.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCTiledMap.h"
+                }, 
+                "CCTiledMapLayer.h": {
+                    "key": "CCTiledMapLayer.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCTiledMapLayer.h"
+                }, 
+                "CCTiledMapLayer_Private.h": {
+                    "key": "CCTiledMapLayer_Private.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCTiledMapLayer_Private.h"
+                }, 
+                "CCTiledMapObjectGroup.h": {
+                    "key": "CCTiledMapObjectGroup.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCTiledMapObjectGroup.h"
+                }, 
+                "CCTransition.h": {
+                    "key": "CCTransition.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "CCTransition.h"
+                }, 
+                "CCVertex.h": {
+                    "key": "CCVertex.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Support/", 
+                    "suffix": "CCVertex.h"
+                }, 
+                "CCWindow.h": {
+                    "key": "CCWindow.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Platforms/Mac/", 
+                    "suffix": "CCWindow.h"
+                }, 
+                "CGPointExtension.h": {
+                    "key": "CGPointExtension.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Support/", 
+                    "suffix": "CGPointExtension.h"
+                }, 
+                "ChipmunkBody.h": {
+                    "key": "ChipmunkBody.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/objectivec/include/ObjectiveChipmunk/", 
+                    "suffix": "ChipmunkBody.h"
+                }, 
+                "ChipmunkConstraint.h": {
+                    "key": "ChipmunkConstraint.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/objectivec/include/ObjectiveChipmunk/", 
+                    "suffix": "ChipmunkConstraint.h"
+                }, 
+                "ChipmunkExtras.h": {
+                    "key": "ChipmunkExtras.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/objectivec/include/ObjectiveChipmunk/", 
+                    "suffix": "ChipmunkExtras.h"
+                }, 
+                "ChipmunkMultiGrab.h": {
+                    "key": "ChipmunkMultiGrab.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/objectivec/include/ObjectiveChipmunk/", 
+                    "suffix": "ChipmunkMultiGrab.h"
+                }, 
+                "ChipmunkShape.h": {
+                    "key": "ChipmunkShape.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/objectivec/include/ObjectiveChipmunk/", 
+                    "suffix": "ChipmunkShape.h"
+                }, 
+                "ChipmunkSpace.h": {
+                    "key": "ChipmunkSpace.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/objectivec/include/ObjectiveChipmunk/", 
+                    "suffix": "ChipmunkSpace.h"
+                }, 
+                "HelloWorldScene.h": {
+                    "key": "HelloWorldScene.h", 
+                    "prefix": "Flop22/Classes/", 
+                    "suffix": "HelloWorldScene.h"
+                }, 
+                "HowtoPlay.h": {
+                    "key": "HowtoPlay.h", 
+                    "prefix": "Flop22/Classes/", 
+                    "suffix": "HowtoPlay.h"
+                }, 
+                "IOSVersion.h": {
+                    "key": "IOSVersion.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/Support/", 
+                    "suffix": "IOSVersion.h"
+                }, 
+                "IntroScene.h": {
+                    "key": "IntroScene.h", 
+                    "prefix": "Flop22/Classes/", 
+                    "suffix": "IntroScene.h"
+                }, 
+                "NSAttributedString+CCAdditions.h": {
+                    "key": "NSAttributedString+CCAdditions.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Support/", 
+                    "suffix": "NSAttributedString+CCAdditions.h"
+                }, 
+                "NSEvent+CC.h": {
+                    "key": "NSEvent+CC.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Platforms/Mac/", 
+                    "suffix": "NSEvent+CC.h"
+                }, 
+                "NSMutableArray+WeakReferences.h": {
+                    "key": "NSMutableArray+WeakReferences.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/Support/", 
+                    "suffix": "NSMutableArray+WeakReferences.h"
+                }, 
+                "NSMutableDictionary+WeakReferences.h": {
+                    "key": "NSMutableDictionary+WeakReferences.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/Support/", 
+                    "suffix": "NSMutableDictionary+WeakReferences.h"
+                }, 
+                "NSThread+performBlock.h": {
+                    "key": "NSThread+performBlock.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Support/", 
+                    "suffix": "NSThread+performBlock.h"
+                }, 
+                "OALAction+Private.h": {
+                    "key": "OALAction+Private.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/Actions/", 
+                    "suffix": "OALAction+Private.h"
+                }, 
+                "OALAction.h": {
+                    "key": "OALAction.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/Actions/", 
+                    "suffix": "OALAction.h"
+                }, 
+                "OALActionManager.h": {
+                    "key": "OALActionManager.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/Actions/", 
+                    "suffix": "OALActionManager.h"
+                }, 
+                "OALAudioActions.h": {
+                    "key": "OALAudioActions.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/Actions/", 
+                    "suffix": "OALAudioActions.h"
+                }, 
+                "OALAudioFile.h": {
+                    "key": "OALAudioFile.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/Support/", 
+                    "suffix": "OALAudioFile.h"
+                }, 
+                "OALAudioSession.h": {
+                    "key": "OALAudioSession.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/Session/", 
+                    "suffix": "OALAudioSession.h"
+                }, 
+                "OALAudioTrack.h": {
+                    "key": "OALAudioTrack.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/AudioTrack/", 
+                    "suffix": "OALAudioTrack.h"
+                }, 
+                "OALAudioTrackNotifications.h": {
+                    "key": "OALAudioTrackNotifications.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/AudioTrack/", 
+                    "suffix": "OALAudioTrackNotifications.h"
+                }, 
+                "OALAudioTracks.h": {
+                    "key": "OALAudioTracks.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/AudioTrack/", 
+                    "suffix": "OALAudioTracks.h"
+                }, 
+                "OALNotifications.h": {
+                    "key": "OALNotifications.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/Support/", 
+                    "suffix": "OALNotifications.h"
+                }, 
+                "OALSimpleAudio.h": {
+                    "key": "OALSimpleAudio.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/", 
+                    "suffix": "OALSimpleAudio.h"
+                }, 
+                "OALSuspendHandler.h": {
+                    "key": "OALSuspendHandler.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/Session/", 
+                    "suffix": "OALSuspendHandler.h"
+                }, 
+                "OALTools.h": {
+                    "key": "OALTools.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/Support/", 
+                    "suffix": "OALTools.h"
+                }, 
+                "OALUtilityActions.h": {
+                    "key": "OALUtilityActions.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/Actions/", 
+                    "suffix": "OALUtilityActions.h"
+                }, 
+                "ObjectAL.h": {
+                    "key": "ObjectAL.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/", 
+                    "suffix": "ObjectAL.h"
+                }, 
+                "ObjectALConfig.h": {
+                    "key": "ObjectALConfig.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/", 
+                    "suffix": "ObjectALConfig.h"
+                }, 
+                "ObjectALMacros.h": {
+                    "key": "ObjectALMacros.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/Support/", 
+                    "suffix": "ObjectALMacros.h"
+                }, 
+                "ObjectiveChipmunk.h": {
+                    "key": "ObjectiveChipmunk.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/objectivec/include/ObjectiveChipmunk/", 
+                    "suffix": "ObjectiveChipmunk.h"
+                }, 
+                "OpenALManager.h": {
+                    "key": "OpenALManager.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/OpenAL/", 
+                    "suffix": "OpenALManager.h"
+                }, 
+                "OpenGL_Internal.h": {
+                    "key": "OpenGL_Internal.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Support/", 
+                    "suffix": "OpenGL_Internal.h"
+                }, 
+                "Prefix.pch": {
+                    "key": "Prefix.pch", 
+                    "prefix": "Flop22/Supporting Files/", 
+                    "suffix": "Prefix.pch"
+                }, 
+                "SynthesizeSingleton.h": {
+                    "key": "SynthesizeSingleton.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/Support/", 
+                    "suffix": "SynthesizeSingleton.h"
+                }, 
+                "TGAlib.h": {
+                    "key": "TGAlib.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Support/", 
+                    "suffix": "TGAlib.h"
+                }, 
+                "TransformUtils.h": {
+                    "key": "TransformUtils.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Support/", 
+                    "suffix": "TransformUtils.h"
+                }, 
+                "UITouch+CC.h": {
+                    "key": "UITouch+CC.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Platforms/iOS/", 
+                    "suffix": "UITouch+CC.h"
+                }, 
+                "ZipUtils.h": {
+                    "key": "ZipUtils.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Support/", 
+                    "suffix": "ZipUtils.h"
+                }, 
+                "aabb.h": {
+                    "key": "aabb.h", 
+                    "prefix": "Flop22/Libraries/kazmath/include/kazmath/", 
+                    "suffix": "aabb.h"
+                }, 
+                "base64.h": {
+                    "key": "base64.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Support/", 
+                    "suffix": "base64.h"
+                }, 
+                "ccConfig.h": {
+                    "key": "ccConfig.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "ccConfig.h"
+                }, 
+                "ccDeprecated.h": {
+                    "key": "ccDeprecated.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "ccDeprecated.h"
+                }, 
+                "ccFPSImages.h": {
+                    "key": "ccFPSImages.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "ccFPSImages.h"
+                }, 
+                "ccGLStateCache.h": {
+                    "key": "ccGLStateCache.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "ccGLStateCache.h"
+                }, 
+                "ccMacros.h": {
+                    "key": "ccMacros.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "ccMacros.h"
+                }, 
+                "ccShader_PositionColorLengthTexture_frag.h": {
+                    "key": "ccShader_PositionColorLengthTexture_frag.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "ccShader_PositionColorLengthTexture_frag.h"
+                }, 
+                "ccShader_PositionColorLengthTexture_vert.h": {
+                    "key": "ccShader_PositionColorLengthTexture_vert.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "ccShader_PositionColorLengthTexture_vert.h"
+                }, 
+                "ccShader_PositionColor_frag.h": {
+                    "key": "ccShader_PositionColor_frag.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "ccShader_PositionColor_frag.h"
+                }, 
+                "ccShader_PositionColor_vert.h": {
+                    "key": "ccShader_PositionColor_vert.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "ccShader_PositionColor_vert.h"
+                }, 
+                "ccShader_PositionTextureA8Color_frag.h": {
+                    "key": "ccShader_PositionTextureA8Color_frag.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "ccShader_PositionTextureA8Color_frag.h"
+                }, 
+                "ccShader_PositionTextureA8Color_vert.h": {
+                    "key": "ccShader_PositionTextureA8Color_vert.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "ccShader_PositionTextureA8Color_vert.h"
+                }, 
+                "ccShader_PositionTextureColorAlphaTest_frag.h": {
+                    "key": "ccShader_PositionTextureColorAlphaTest_frag.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "ccShader_PositionTextureColorAlphaTest_frag.h"
+                }, 
+                "ccShader_PositionTextureColor_frag.h": {
+                    "key": "ccShader_PositionTextureColor_frag.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "ccShader_PositionTextureColor_frag.h"
+                }, 
+                "ccShader_PositionTextureColor_vert.h": {
+                    "key": "ccShader_PositionTextureColor_vert.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "ccShader_PositionTextureColor_vert.h"
+                }, 
+                "ccShader_PositionTexture_frag.h": {
+                    "key": "ccShader_PositionTexture_frag.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "ccShader_PositionTexture_frag.h"
+                }, 
+                "ccShader_PositionTexture_uColor_frag.h": {
+                    "key": "ccShader_PositionTexture_uColor_frag.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "ccShader_PositionTexture_uColor_frag.h"
+                }, 
+                "ccShader_PositionTexture_uColor_vert.h": {
+                    "key": "ccShader_PositionTexture_uColor_vert.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "ccShader_PositionTexture_uColor_vert.h"
+                }, 
+                "ccShader_PositionTexture_vert.h": {
+                    "key": "ccShader_PositionTexture_vert.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "ccShader_PositionTexture_vert.h"
+                }, 
+                "ccShader_Position_uColor_frag.h": {
+                    "key": "ccShader_Position_uColor_frag.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "ccShader_Position_uColor_frag.h"
+                }, 
+                "ccShader_Position_uColor_vert.h": {
+                    "key": "ccShader_Position_uColor_vert.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "ccShader_Position_uColor_vert.h"
+                }, 
+                "ccShaders.h": {
+                    "key": "ccShaders.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "ccShaders.h"
+                }, 
+                "ccTypes.h": {
+                    "key": "ccTypes.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "ccTypes.h"
+                }, 
+                "ccUtils.h": {
+                    "key": "ccUtils.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Support/", 
+                    "suffix": "ccUtils.h"
+                }, 
+                "chipmunk.h": {
+                    "key": "chipmunk.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/include/chipmunk/", 
+                    "suffix": "chipmunk.h"
+                }, 
+                "chipmunk_ffi.h": {
+                    "key": "chipmunk_ffi.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/include/chipmunk/", 
+                    "suffix": "chipmunk_ffi.h"
+                }, 
+                "chipmunk_private.h": {
+                    "key": "chipmunk_private.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/include/chipmunk/", 
+                    "suffix": "chipmunk_private.h"
+                }, 
+                "chipmunk_types.h": {
+                    "key": "chipmunk_types.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/include/chipmunk/", 
+                    "suffix": "chipmunk_types.h"
+                }, 
+                "chipmunk_unsafe.h": {
+                    "key": "chipmunk_unsafe.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/include/chipmunk/", 
+                    "suffix": "chipmunk_unsafe.h"
+                }, 
+                "cocos2d-ui.h": {
+                    "key": "cocos2d-ui.h", 
+                    "prefix": "Flop22/Libraries/cocos2d-ui/", 
+                    "suffix": "cocos2d-ui.h"
+                }, 
+                "cocos2d.h": {
+                    "key": "cocos2d.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/", 
+                    "suffix": "cocos2d.h"
+                }, 
+                "cpArbiter.h": {
+                    "key": "cpArbiter.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/include/chipmunk/", 
+                    "suffix": "cpArbiter.h"
+                }, 
+                "cpBB.h": {
+                    "key": "cpBB.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/include/chipmunk/", 
+                    "suffix": "cpBB.h"
+                }, 
+                "cpBody.h": {
+                    "key": "cpBody.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/include/chipmunk/", 
+                    "suffix": "cpBody.h"
+                }, 
+                "cpConstraint.h": {
+                    "key": "cpConstraint.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/include/chipmunk/", 
+                    "suffix": "cpConstraint.h"
+                }, 
+                "cpDampedRotarySpring.h": {
+                    "key": "cpDampedRotarySpring.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/include/chipmunk/", 
+                    "suffix": "cpDampedRotarySpring.h"
+                }, 
+                "cpDampedSpring.h": {
+                    "key": "cpDampedSpring.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/include/chipmunk/", 
+                    "suffix": "cpDampedSpring.h"
+                }, 
+                "cpGearJoint.h": {
+                    "key": "cpGearJoint.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/include/chipmunk/", 
+                    "suffix": "cpGearJoint.h"
+                }, 
+                "cpGrooveJoint.h": {
+                    "key": "cpGrooveJoint.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/include/chipmunk/", 
+                    "suffix": "cpGrooveJoint.h"
+                }, 
+                "cpPinJoint.h": {
+                    "key": "cpPinJoint.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/include/chipmunk/", 
+                    "suffix": "cpPinJoint.h"
+                }, 
+                "cpPivotJoint.h": {
+                    "key": "cpPivotJoint.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/include/chipmunk/", 
+                    "suffix": "cpPivotJoint.h"
+                }, 
+                "cpPolyShape.h": {
+                    "key": "cpPolyShape.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/include/chipmunk/", 
+                    "suffix": "cpPolyShape.h"
+                }, 
+                "cpRatchetJoint.h": {
+                    "key": "cpRatchetJoint.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/include/chipmunk/", 
+                    "suffix": "cpRatchetJoint.h"
+                }, 
+                "cpRotaryLimitJoint.h": {
+                    "key": "cpRotaryLimitJoint.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/include/chipmunk/", 
+                    "suffix": "cpRotaryLimitJoint.h"
+                }, 
+                "cpShape.h": {
+                    "key": "cpShape.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/include/chipmunk/", 
+                    "suffix": "cpShape.h"
+                }, 
+                "cpSimpleMotor.h": {
+                    "key": "cpSimpleMotor.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/include/chipmunk/", 
+                    "suffix": "cpSimpleMotor.h"
+                }, 
+                "cpSlideJoint.h": {
+                    "key": "cpSlideJoint.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/include/chipmunk/", 
+                    "suffix": "cpSlideJoint.h"
+                }, 
+                "cpSpace.h": {
+                    "key": "cpSpace.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/include/chipmunk/", 
+                    "suffix": "cpSpace.h"
+                }, 
+                "cpSpatialIndex.h": {
+                    "key": "cpSpatialIndex.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/include/chipmunk/", 
+                    "suffix": "cpSpatialIndex.h"
+                }, 
+                "cpTransform.h": {
+                    "key": "cpTransform.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/include/chipmunk/", 
+                    "suffix": "cpTransform.h"
+                }, 
+                "cpVect.h": {
+                    "key": "cpVect.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/include/chipmunk/", 
+                    "suffix": "cpVect.h"
+                }, 
+                "kazmath.h": {
+                    "key": "kazmath.h", 
+                    "prefix": "Flop22/Libraries/kazmath/include/kazmath/", 
+                    "suffix": "kazmath.h"
+                }, 
+                "mach_timing.h": {
+                    "key": "mach_timing.h", 
+                    "prefix": "Flop22/Libraries/ObjectAL/Support/", 
+                    "suffix": "mach_timing.h"
+                }, 
+                "mat3.h": {
+                    "key": "mat3.h", 
+                    "prefix": "Flop22/Libraries/kazmath/include/kazmath/", 
+                    "suffix": "mat3.h"
+                }, 
+                "mat4.h": {
+                    "key": "mat4.h", 
+                    "prefix": "Flop22/Libraries/kazmath/include/kazmath/", 
+                    "suffix": "mat4.h"
+                }, 
+                "mat4stack.h": {
+                    "key": "mat4stack.h", 
+                    "prefix": "Flop22/Libraries/kazmath/include/kazmath/GL/", 
+                    "suffix": "mat4stack.h"
+                }, 
+                "matrix.h": {
+                    "key": "matrix.h", 
+                    "prefix": "Flop22/Libraries/kazmath/include/kazmath/GL/", 
+                    "suffix": "matrix.h"
+                }, 
+                "neon_matrix_impl.h": {
+                    "key": "neon_matrix_impl.h", 
+                    "prefix": "Flop22/Libraries/kazmath/include/kazmath/", 
+                    "suffix": "neon_matrix_impl.h"
+                }, 
+                "plane.h": {
+                    "key": "plane.h", 
+                    "prefix": "Flop22/Libraries/kazmath/include/kazmath/", 
+                    "suffix": "plane.h"
+                }, 
+                "prime.h": {
+                    "key": "prime.h", 
+                    "prefix": "Flop22/Libraries/Chipmunk/chipmunk/src/", 
+                    "suffix": "prime.h"
+                }, 
+                "quaternion.h": {
+                    "key": "quaternion.h", 
+                    "prefix": "Flop22/Libraries/kazmath/include/kazmath/", 
+                    "suffix": "quaternion.h"
+                }, 
+                "ray2.h": {
+                    "key": "ray2.h", 
+                    "prefix": "Flop22/Libraries/kazmath/include/kazmath/", 
+                    "suffix": "ray2.h"
+                }, 
+                "uthash.h": {
+                    "key": "uthash.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Support/", 
+                    "suffix": "uthash.h"
+                }, 
+                "utility.h": {
+                    "key": "utility.h", 
+                    "prefix": "Flop22/Libraries/kazmath/include/kazmath/", 
+                    "suffix": "utility.h"
+                }, 
+                "utlist.h": {
+                    "key": "utlist.h", 
+                    "prefix": "Flop22/Libraries/cocos2d/Support/", 
+                    "suffix": "utlist.h"
+                }, 
+                "vec2.h": {
+                    "key": "vec2.h", 
+                    "prefix": "Flop22/Libraries/kazmath/include/kazmath/", 
+                    "suffix": "vec2.h"
+                }, 
+                "vec3.h": {
+                    "key": "vec3.h", 
+                    "prefix": "Flop22/Libraries/kazmath/include/kazmath/", 
+                    "suffix": "vec3.h"
+                }, 
+                "vec4.h": {
+                    "key": "vec4.h", 
+                    "prefix": "Flop22/Libraries/kazmath/include/kazmath/", 
+                    "suffix": "vec4.h"
+                }
+            }, 
+            "type": "iquote"
+        }, 
+        {
+            "header_path": "/var/folders/ty/bdz88k6j1k3497b3cr2pc0j80000gn/T/tmpfDqIRe/BUILT_PRODUCTS_DIR/include", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Flop22/Libraries/Chipmunk/chipmunk/include", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Flop22/Libraries/Chipmunk/objectivec/include", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "/var/folders/ty/bdz88k6j1k3497b3cr2pc0j80000gn/T/tmpfDqIRe/DERIVED_FILE_DIR/armv7", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "/var/folders/ty/bdz88k6j1k3497b3cr2pc0j80000gn/T/tmpfDqIRe/DERIVED_FILE_DIR", 
+            "type": "I"
+        }
+    ], 
+    "infoplists": [], 
+    "java_libs": [], 
+    "java_res_dirs": [], 
+    "java_sourcepaths": [], 
+    "java_sources": [], 
+    "libs": [], 
+    "link_flags": [], 
+    "modules": [], 
+    "pchs": [], 
+    "sources": [
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/chipmunk.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpArbiter.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpArray.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpBBTree.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpBody.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpCollision.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpConstraint.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpDampedRotarySpring.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpDampedSpring.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpGearJoint.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpGrooveJoint.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpHashSet.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpPinJoint.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpPivotJoint.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpPolyShape.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpRatchetJoint.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpRotaryLimitJoint.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpShape.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpSimpleMotor.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpSlideJoint.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpSpace.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpSpaceComponent.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpSpaceDebug.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpSpaceHash.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpSpaceQuery.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpSpaceStep.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpSpatialIndex.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "Flop22/Libraries/Chipmunk/chipmunk/src/cpSweep1D.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Flop22/Libraries/Chipmunk/objectivec/src/ChipmunkBody.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Flop22/Libraries/Chipmunk/objectivec/src/ChipmunkConstraint.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Flop22/Libraries/Chipmunk/objectivec/src/ChipmunkMultiGrab.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Flop22/Libraries/Chipmunk/objectivec/src/ChipmunkShape.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Flop22/Libraries/Chipmunk/objectivec/src/ChipmunkSpace.m"
+        }
+    ], 
+    "storyboards": [], 
+    "type": "static-lib", 
+    "version": "3", 
+    "xcdatamodels": [], 
+    "xcode_project": "Flop22.xcodeproj", 
+    "xibs": []
+}
